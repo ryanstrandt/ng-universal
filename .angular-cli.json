@@ -37,13 +37,13 @@
           "favicon.ico"
         ],
         "index": "index.html",
-        "main": "main.server.ts",
+        "main": "server/main.server.ts",
         "test": "test.ts",
         "tsconfig": "tsconfig.server.json",
         "testTsconfig": "tsconfig.spec.json",
         "prefix": "app",
         "styles": [
-          "styles.css"
+          "server/styles.css"
         ],
         "scripts": [],
         "environmentSource": "environments/environment.ts",
