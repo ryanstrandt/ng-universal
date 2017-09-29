@@ -17,7 +17,7 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/mai
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 // Load the index.html file containing referances to your application bundle.
-const index = readFileSync(join('browser', 'index.html'), 'utf8');
+const index = readFileSync(join('client', 'index.html'), 'utf8');
 
 
 // Writes rendered HTML to ./dist/index.html, replacing the file if it already exists.
@@ -28,4 +28,4 @@ renderModuleFactory(AppServerModuleNgFactory, {
     provideModuleMap(LAZY_MODULE_MAP)
   ]
 })
-.then(html => writeFileSync(join('browser', 'index.html'), html));
+.then(html => writeFileSync(join('client', 'index.html'), html));
