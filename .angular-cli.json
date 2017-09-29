@@ -30,20 +30,20 @@
       },
       {
         "platform": "server",
-        "root": "src",
+        "root": "src/server",
         "outDir": "dist/server",
         "assets": [
           "assets",
           "favicon.ico"
         ],
         "index": "index.html",
-        "main": "server/main.server.ts",
+        "main": "main.server.ts",
         "test": "test.ts",
-        "tsconfig": "tsconfig.server.json",
+        "tsconfig": "../tsconfig.server.json",
         "testTsconfig": "tsconfig.spec.json",
         "prefix": "app",
         "styles": [
-          "server/styles.css"
+          "styles.css"
         ],
         "scripts": [],
         "environmentSource": "environments/environment.ts",
